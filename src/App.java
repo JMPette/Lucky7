@@ -44,9 +44,10 @@ public class App {
             winnings = (calcW1 ) ;
 
             if (winnings >0){
-            System.out.println("Voitit " + winnings + "!");
+                money += winnings;
+                System.out.println("Voitit " + winnings + "!");
             //winnings = 0;
-            //money = (money + winnings);
+           
             
             }
             else{
