@@ -13,7 +13,7 @@ public class App {
         Integer num3;
         Integer sevencount=0;
         Integer winnings;
-        Integer calcW1;  
+        //Integer calcW1;  
              
 
         do {
@@ -27,13 +27,13 @@ public class App {
             if (num3 == 7) sevencount++; 
 
                 if (sevencount == 3) {
-                    calcW1 = 7;
+                    winnings = 7;
                 } else if (sevencount == 2) {
-                    calcW1 = 5;
+                    winnings = 5;
                 } else if (sevencount == 1) {
-                    calcW1 = 3;
+                    winnings = 3;
                 } else {
-                    calcW1 = 0;
+                    winnings = 0;
                 }
             System.out.println("Arvotut numero on " + num1 + "," + num2 + "," + num3);
             //winnings = calcW1(num1, num2, num3);
@@ -41,7 +41,7 @@ public class App {
 
             
 
-            winnings = (calcW1 ) ;
+            
 
             if (winnings >0){
                 money += winnings;
@@ -54,7 +54,8 @@ public class App {
                 System.out.println("Hävisit!");
             }
 
-            
+            System.out.println("Rahan jäljellä: " + money);
+            round++; // Increment round counter
             
             
         }
